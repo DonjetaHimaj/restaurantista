@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Restaurantista</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body>
+        <div id="header-placeholder"></div>
+        <!-- <header>
+            <img src="./images/restaurantista-logo.jpg" alt="Logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="menu.html">Menu</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+         -->
+        <main>
+            <section id="menu-section">
+                <img src="./images/original.jpg" alt="Cooking image" id="menu-image">
+                <h2>Menu</h2>
+                <select name="menu" id="menu" onchange="updateMenuItems()">
+                    <option value="pasta">Pasta</option>
+                    <option value="pizza">Pizza</option>
+                    <option value="desserts">Desserts</option>
+                </select>
+                <input type="text" id="search" placeholder="Search menu items...">
+                <ul id="menu-items"></ul>
+            </section>
+            <section id="basket-section">
+                <h2>Add to Basket</h2>
+                <ul id="basket-items"></ul>
+                <p id="basket-message">
+                    Sorry, you can't order yet. Restauranista has set a minimum order amount of 20,00€ (excl. delivery cost)
+                </p>
+                <p>Subtotal:<span id="subtotal-price"> 0.00</span>&#8364;</p>
+                <p>VAT (18%)<span id="tax-price"> 0.00</span></p>
+                <p id="total-price-container">Total:<span id="totali-price"> 0.00</span>&#8364;</p>
+                <button id="checkout">Pay</button>
+            </section>
+        </main>
+        <div id="footer-placeholder"></div>
+        <!-- <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>
+                            About Us
+                        </h3>
+                        <p>
+                            At our website, we combine food with convenience of online ordering. With a just few clicks, you can explore our menu, select your favorite dishes, and have them delivered right to your doorstep.  
+                        </p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>
+                            Contact 
+                        </h3>
+                        <p>
+                            123 Main St. <br>
+                            New Yrok, Usa 10015 <br>
+                            Email: order@restaurantista.org <br>
+                            Phone: 044 000 000 
+                        </p>
+                    </div>
+                    <div class="footer-column">
+                        <img src="images/restaurantista-logo.jpg" alt="Restaurantista Logo" class="footer-logo">
+                        <h3> Follow Us </h3>
+                        <div class="social-media-icons">
+                            <a href="https://facebook.com">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://x.com">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://linkedin.com">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="footer-bottom">
+                        <i class="fa-regular fa-copyright"></i> 2024 Restaurantista, all rights reserved. 
+                    </p>
+                </div>
+            </div>
+        </footer> -->
+
+        <script src="template.js"></script>
+        <script src="menu.js"></script>
+    </body>
+</html>
